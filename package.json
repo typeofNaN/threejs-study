@@ -1,0 +1,34 @@
+{
+  "name": "threejs-study",
+  "version": "1.0.0",
+  "description": "学习一下Three.js",
+  "main": "index.js",
+  "author": {
+    "name": "typeofNaN",
+    "url": "https://github.com/typeofNaN",
+    "email": "dmdefine6@gmail.com"
+  },
+  "homepage": "https://github.com/typeofNaN/threejs-study",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeofNaN/threejs-study.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeofNaN/threejs-study/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "three": "^0.178.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.178.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

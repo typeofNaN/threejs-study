@@ -1,2 +1,3 @@
-# threejs-study
-:book: 学习一下Three.js
+# Threejs Study
+
+📖 学习一下Three.js
