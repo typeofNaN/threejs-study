@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 // 创建3D场景对象Scene
 const scene = new THREE.Scene()
@@ -17,14 +18,14 @@ const geometer = new THREE.BoxGeometry(100, 100, 100)
 
 // 创建一个材料对象Material
 const material = new THREE.MeshLambertMaterial({
-  color: 0xFF00CC, // 颜色
+  color: 0xFF00AA, // 颜色
   // transparent: true, // 开启透明度
   // opacity: 0.5 // 透明度
 })
 
 const mesh = new THREE.Mesh(geometer, material)
 
-mesh.position.set(50, 50, 50)
+mesh.position.set(0, 0, 0)
 
 scene.add(mesh)
 
@@ -60,6 +61,12 @@ renderer.setSize(width, height)
 renderer.render(scene, camera)
 
 document.getElementById('app')?.appendChild(renderer.domElement)
+
+const controls = new OrbitControls(camera, renderer.domElement)
+
+controls.addEventListener('change', () => {
+  renderer.render(scene, camera)
+})
 
 function render() {
   renderer.render(scene, camera)
